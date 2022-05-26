@@ -1,0 +1,17 @@
+{% extends 'myfirst/main.html' %}
+{% load static %}
+{% block contant %}
+  <form method="POST" action="">
+      {% csrf_token %}
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      {{fm.as_p}}
+      
+        <button type="submit" class="signup">Sign Up</button>
+     
+    </div>
+  </form>
+
+{% endblock contant %}

@@ -1,0 +1,16 @@
+{% extends 'myfirst/main.html' %}
+{% load static %}
+{% block contant %}
+{% for cv in cvs  %}
+
+ <a href="{% url 'profile' cv.id %}"><h4>{{cv.name}} </h4>                       
+    <a href="#" class="btn btn-warning">edit </a><form action="{% url 'delete' cv.id %}" method="post" class="d-inline">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+        
+        </form></a><hr>
+
+
+{% endfor %}
+
+{% endblock contant %}

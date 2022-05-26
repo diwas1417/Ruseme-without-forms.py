@@ -1,0 +1,39 @@
+{% extends 'myfirst/main.html' %}
+{% load static %}
+{% block contant %}
+
+
+  <div class="container">
+  <h1 class="alert-danger text-center"> candidate details</h1>
+  <div class="row-sm-20">
+  <div class="col-sm-10">
+  <h3 class="text-center"><u>Resume</u></h3>
+  <p>Application No:{{can.id}}</p>
+  
+  <p>Name:{{can.name}}</p>
+  <p>Date of Birth:{{can.dob}}</p>
+  <p>Gender:{{can.gender}}</p>
+  <p>school:{{can.school}}</p>
+  <p>mobile no:{{can.mobile}}</p>
+  <p>email:{{can.email}}</p>
+  <p>job city:{{can.job_city}}</p>
+  <p> do as your wise<p>
+  
+
+  
+  </div>
+  
+  </div>
+  
+ 
+  
+  
+  
+  </div>
+  
+  
+
+  
+
+
+{% endblock contant %}
